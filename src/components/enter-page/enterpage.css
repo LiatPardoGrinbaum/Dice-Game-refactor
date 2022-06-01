@@ -1,0 +1,73 @@
+.enterIn {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("/images/diceGameback.jpg") center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.inner-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 650px;
+  height: 500px;
+}
+.inner-wrap p {
+  background: rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
+  /* padding: 5px; */
+  font-size: 18px;
+}
+.btn-enter {
+  width: 160px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 22px;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  background-size: 200%;
+  cursor: pointer;
+  transition: 0.6s;
+  border: none;
+  background-image: linear-gradient(45deg, rgb(255, 170, 22), rgb(222, 255, 206), rgb(13, 255, 182));
+  font-family: "Righteous", cursive;
+}
+
+.btn-enter:hover {
+  background-position: right;
+}
+
+.instraBtn {
+  width: 160px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 22px;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  background-size: 200%;
+  cursor: pointer;
+  transition: 0.6s;
+  border: none;
+  background-image: linear-gradient(45deg, rgb(255, 170, 22), rgb(222, 255, 206), rgb(13, 255, 182));
+  font-family: "Righteous", cursive;
+}
+
+.instraBtn:hover {
+  background-position: right;
+}
+
+.inner-wrap .liat {
+  background: none;
+  color: rgb(31, 8, 8);
+}

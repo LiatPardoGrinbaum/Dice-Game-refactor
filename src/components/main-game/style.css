@@ -1,0 +1,243 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  color: yellow;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: white;
+  width: 100%;
+  height: 80%;
+}
+
+.main-inner-container {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  height: 100%;
+  width: 70%;
+  background: rgba(51, 51, 51, 0.685);
+  color: rgb(51, 51, 17);
+  border-radius: 30px;
+}
+
+.title {
+  color: white;
+}
+
+.player-container {
+  background: rgb(130, 130, 103);
+}
+
+.player-turn {
+  background: rgb(217, 217, 76);
+}
+.diceTools {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  width: 50%;
+  height: 100%;
+}
+
+.dice {
+  height: 90px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  /* border: 2px solid black; */
+  animation: dice 0.5s;
+  transition: all 0.7s;
+}
+.dice:hover {
+  transform: scale(1.1);
+}
+@keyframes dice {
+  0% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(8deg);
+  }
+}
+
+.dice1 {
+  background: url("/images/dice-1.png") no-repeat center center/contain;
+}
+.dice2 {
+  background: url("/images/dice-2.png") no-repeat center center/contain;
+}
+.dice3 {
+  background: url("/images/dice-3.png") no-repeat center center/contain;
+}
+.dice4 {
+  background: url("/images/dice-4.png") no-repeat center center/contain;
+}
+.dice5 {
+  background: url("/images/dice-5.png") no-repeat center center/contain;
+}
+.dice6 {
+  background: url("/images/dice-6.png") no-repeat center center/contain;
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(104, 104, 104);
+  width: 50%;
+
+  /* gap: 50px; */
+
+  border-radius: 20px;
+}
+
+.hidden {
+  background: rgb(22, 184, 57);
+  opacity: 0.6;
+}
+
+.active {
+  background: rgb(22, 184, 57);
+  transform: scale(1.05);
+}
+
+.gameOver {
+  position: absolute;
+
+  margin-top: 20px;
+  height: 65%;
+  width: 50%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(97, 152, 111, 0.903), rgb(54, 30, 30), rgba(126, 215, 149, 0.903));
+  z-index: 1;
+
+  animation: anim 2s;
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.gameOver h1 h2 {
+  animation: anim 2s;
+}
+
+.btn {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: rgb(250, 95, 95);
+  font-family: "Righteous", cursive;
+}
+
+.btn:hover {
+  background: rgb(255, 252, 89);
+}
+
+.btn-new-page {
+  background: rgba(255, 127, 41, 0.241);
+  color: black;
+  font-size: 20px;
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.btn-blink {
+  animation: blinking 1300ms infinite;
+}
+
+@keyframes blinking {
+  0% {
+    background-color: rgba(255, 127, 41, 0.241);
+  }
+  50% {
+    background-color: rgb(255, 252, 89);
+    box-shadow: 0 0 20px rgb(207, 249, 0);
+  }
+  100% {
+    background-color: rgba(255, 127, 41, 0.241);
+  }
+}
+
+label {
+  text-align: center;
+  width: 130px;
+  margin-top: 20px;
+}
+#input {
+  width: 130px;
+  text-align: center;
+}
+
+.sixMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -100px;
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  background: rgba(255, 60, 60, 0.756);
+  z-index: 1;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  color: yellow;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px white solid;
+  color: white;
+  width: 100%;
+}
+
+.main-inner-container {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 1px white solid;
+  min-height: 450px;
+  background: rgba(51, 51, 51, 0.685);
+  color: rgb(51, 51, 17);
+  border-radius: 30px;
+}
+
+.player {
+  border: 1px solid rgb(104, 104, 104);
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+ */
